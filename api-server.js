@@ -1,7 +1,6 @@
 const express = require('express')
 const app = express()
 const cors = require('cors');
-const port = 3001
 
 
 app.use(cors({
@@ -14,4 +13,4 @@ app.use(cors({
 app.use((err,req,res,next) => {
 res.status(500).send("Internal Server Error" + err.message);
 });
-app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+app.listen(3001, () => console.log(`Example app listening on port ${3001}!`))
